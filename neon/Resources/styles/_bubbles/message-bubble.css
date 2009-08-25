@@ -1,0 +1,168 @@
+/* @group message */
+
+.bubble {
+	position: relative;
+	min-height: 47px;
+}
+
+	/* @group text */
+
+	.bubble .body {
+		padding: 14px 23px 22px 23px;
+		overflow: auto;
+	}
+	.bubble .time {
+		font-family: helvetica, sans-serif;
+		font-size: 9px;
+		position: absolute;
+		bottom: -1px;
+		text-align: center;
+		width: 100%;
+		color: #c7c7c7;
+		text-shadow: #fff 0 0 5px;
+		/*display:  none;*/
+		opacity: 0;
+		-webkit-transition: opacity 0.3s ease-in-out;
+	}
+			
+	/* @end */
+	
+	/* @group top */
+	
+	.bubble .t {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		height: 16px;
+		background: 
+			url("../../images/modern/topleft.png") top left no-repeat,
+			url("../../images/modern/topright.png") top right no-repeat;
+		z-index: -1;
+	}
+		.bubble .t div {
+			position: absolute;
+			left: 27px;
+			right: 27px;
+			top: 0px;
+			bottom: 0px;
+			background: 
+				url("../../images/modern/top.png") top left repeat-x;
+		}
+	
+	/* @end */
+
+	/* @group left - right */
+	
+	.bubble .lr {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			top: 16px;
+			bottom: 32px;
+			background: 
+				url("../../images/modern/left.png") top left repeat-y,
+				url("../../images/modern/right.png") top right repeat-y;
+			z-index: -1;
+		}
+			.bubble .lr div {
+				position: absolute;
+				left: 27px;
+				right: 27px;
+				top: 0px;
+				bottom: 0px;
+				background: url("../../images/modern/middle.png") top left repeat;
+				z-index: -1;
+			}
+	
+	/* @end */
+	
+	/* @group bottom */
+	
+	.bubble .b {
+		/*border: 1px solid red;*/
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		height: 32px;
+		background: 
+			url("../../images/modern/bottomleft.png") bottom left no-repeat,
+			url("../../images/modern/bottomright.png") bottom right no-repeat;
+		z-index: -1;
+	}
+		.bubble .b div {
+			position: absolute;
+			left: 27px;
+			right: 27px;
+			bottom: 0px;
+			top: 0px;
+			background: 
+				url("../../images/modern/bottom.png") bottom left repeat-x;
+		}
+	
+	/* @end */
+	
+	/* @group reflection */
+	
+	.bubble .r {
+		opacity: 0.15;
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		height: 32px;
+		background: 
+			url("../../images/modern/ref-bottomleft.png") bottom left no-repeat,
+			url("../../images/modern/ref-bottomright.png") bottom right no-repeat;
+		z-index: -2;
+	}
+		.bubble .r div {
+			position: absolute;
+			left: 27px;
+			right: 27px;
+			bottom: 0px;
+			top: 0px;
+			background: 
+				url("../../images/modern/ref-bottom.png") bottom left repeat-x;
+		}
+	
+	/* @end */
+
+	/* @group compact bubbles */
+	
+	.bubble .compact {
+		padding: 14px 23px 22px 23px;
+	}
+	.bubble .compact .cbody, .bubble .compact .cnbody {
+		position: relative;
+		word-wrap: break-word;
+	}
+	.bubble .compact .cbody {
+		border-top: 1px solid #d8d8d8;
+		padding-top: 5px;
+		margin-top: 5px;
+	}
+	.bubble .compact .cbody:first-child {
+		border-top: none !important;
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+	.bubble .compact .time {
+		font-size: 9px;
+		position: absolute;
+		width: 40px;
+		top: 7px;
+		color: #c7c7c7;
+		white-space: nowrap;
+		opacity: 0;
+		-webkit-transition: opacity 0.3s ease-in-out;
+	}
+	.bubble .compact .cbody:first-child .time {
+		top: 2px;
+	}
+
+	/* @end */
+
+
+/* @end */

@@ -1,0 +1,100 @@
+
+/* import header for the white variants */
+@import url("../_headers/white.css");
+
+/* include the global header override style sheet */
+@import url("../_headers/_global_override.css");
+
+
+BODY {
+	background: #fff url("../../images/bg-white.jpg") top center repeat-y;
+}
+
+
+/* @group misc */
+.bubble .compact .cbody {
+	border-top: 1px solid #ebebeb;
+}
+.message .icon canvas {
+	display: none;
+}
+/* @end */
+
+
+/* @group top */
+.bubble .t {
+	background: 
+		url("../../images/white/topleft.png") top left no-repeat,
+		url("../../images/white/topright.png") top right no-repeat;
+}
+	.bubble .t div {
+		background: 
+			url("../../images/white/top.png") top left repeat-x;
+	}
+/* @end */
+
+
+/* @group left-right */
+.bubble .lr {
+	background: 
+		url("../../images/white/left.png") top left repeat-y,
+		url("../../images/white/right.png") top right repeat-y;
+}
+	.bubble .lr div {
+		background: url("../../images/white/middle.png") top left repeat;
+	}
+/* @end */
+
+
+/* @group bottom */
+.bubble .b {
+	background: 
+		url("../../images/white/bottomleft.png") bottom left no-repeat,
+		url("../../images/white/bottomright.png") bottom right no-repeat;
+}
+	.bubble .b div {
+		background: 
+			url("../../images/white/bottom.png") bottom left repeat-x;
+	}
+/* @end */
+
+
+/* @group reflection */
+.bubble .r {
+	background: 
+		url("../../images/white/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/white/ref-bottomright.png") bottom right no-repeat;
+}
+	.bubble .r div {
+		background: 
+			url("../../images/white/ref-bottom.png") bottom left repeat-x;
+	}
+/* @end */
+	
+
+/* @group incoming */
+.incoming .bubble .b {
+	background:
+		url("../../images/white/bottomleft.png") bottom left no-repeat,
+		url("../../images/white/bottomright-arrow.png") bottom right no-repeat;
+}
+.incoming .bubble .r {
+	background:
+		url("../../images/white/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/white/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+/* @end */
+
+
+/* @group outgoing */
+.outgoing .bubble .b {
+	background:
+		url("../../images/white/bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/white/bottomright.png") bottom right no-repeat;
+}
+.outgoing .bubble .r {
+	background:
+		url("../../images/white/ref-bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/white/ref-bottomright.png") bottom right no-repeat;
+}
+/* @end */

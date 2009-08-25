@@ -1,0 +1,66 @@
+
+
+/* @group misc */
+.outgoing .bubble .compact .cbody {
+	border-top: 1px solid #eab236;
+}
+.outgoing .bubble .time {
+	color: #ffc23b;
+	text-shadow: #ffc23b 0 0 5px;
+}
+.bubble .body a, .bubble .cbody a {
+	color: #1c1cbf;
+}
+/* @end */
+
+
+/* @group top */
+.outgoing .bubble .t {
+	background: 
+		url("../../images/glass-orange/topleft.png") top left no-repeat,
+		url("../../images/glass-orange/topright.png") top right no-repeat;
+}
+	.outgoing .bubble .t div {
+		background: 
+			url("../../images/glass-orange/top.png") top left repeat-x;
+	}
+/* @end */
+
+
+/* @group left-right */
+.outgoing .bubble .lr {
+	background: 
+		url("../../images/glass-orange/left.png") top left repeat-y,
+		url("../../images/glass-orange/right.png") top right repeat-y;
+}
+	.outgoing .bubble .lr div {
+		background: url("../../images/glass-orange/middle.png") top left repeat;
+	}
+/* @end */
+
+
+/* @group bottom */
+.outgoing .bubble .b {
+	background: 
+		url("../../images/glass-orange/bottomleft.png") bottom left no-repeat,
+		url("../../images/glass-orange/bottomright-arrow.png") bottom right no-repeat;
+}
+	.outgoing .bubble .b div {
+		background: 
+			url("../../images/glass-orange/bottom.png") bottom left repeat-x;
+	}
+/* @end */
+
+
+/* @group reflection */
+.outgoing .bubble .r {
+	opacity: 0.3;
+	background: 
+		url("../../images/glass-orange/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/glass-orange/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+	.outgoing .bubble .r div {
+		background: 
+			url("../../images/glass-orange/ref-bottom.png") bottom left repeat-x;
+	}
+/* @end */

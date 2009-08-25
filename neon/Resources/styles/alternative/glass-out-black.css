@@ -1,0 +1,68 @@
+
+
+/* @group misc */
+.outgoing .bubble .compact .cbody {
+	border-top: 1px solid #191919;
+}
+.outgoing .bubble {
+	color: #ccc;
+}
+.outgoing .bubble .time {
+	color: #aaa;
+}
+.bubble .body a, .bubble .cbody a {
+	color: #3030be;
+}
+/* @end */
+
+
+/* @group top */
+.outgoing .bubble .t {
+	background: 
+		url("../../images/glass-black/topleft.png") top left no-repeat,
+		url("../../images/glass-black/topright.png") top right no-repeat;
+}
+	.outgoing .bubble .t div {
+		background: 
+			url("../../images/glass-black/top.png") top left repeat-x;
+	}
+/* @end */
+
+
+/* @group left-right */
+.outgoing .bubble .lr {
+	background: 
+		url("../../images/glass-black/left.png") top left repeat-y,
+		url("../../images/glass-black/right.png") top right repeat-y;
+}
+	.outgoing .bubble .lr div {
+		background: url("../../images/glass-black/middle.png") top left repeat;
+	}
+/* @end */
+
+
+/* @group bottom */
+.outgoing .bubble .b {
+	background: 
+		url("../../images/glass-black/bottomleft.png") bottom left no-repeat,
+		url("../../images/glass-black/bottomright-arrow.png") bottom right no-repeat;
+}
+	.outgoing .bubble .b div {
+		background: 
+			url("../../images/glass-black/bottom.png") bottom left repeat-x;
+	}
+/* @end */
+
+
+/* @group reflection */
+.outgoing .bubble .r {
+	opacity: 0.3;
+	background: 
+		url("../../images/glass-black/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/glass-black/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+	.outgoing .bubble .r div {
+		background: 
+			url("../../images/glass-black/ref-bottom.png") bottom left repeat-x;
+	}
+/* @end */

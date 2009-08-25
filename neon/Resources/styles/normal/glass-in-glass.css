@@ -1,0 +1,58 @@
+
+
+/* @group misc */
+.incoming .bubble .compact .cbody {
+	border-top: 1px solid #d2d2d2;
+}
+/* @end */
+
+
+/* @group top */
+.incoming .bubble .t {
+	background: 
+		url("../../images/glass/topleft.png") top left no-repeat,
+		url("../../images/glass/topright.png") top right no-repeat;
+}
+	.incoming .bubble .t div {
+		background: 
+			url("../../images/glass/top.png") top left repeat-x;
+	}
+/* @end */
+
+
+/* @group left-right */
+.incoming .bubble .lr {
+	background: 
+		url("../../images/glass/left.png") top left repeat-y,
+		url("../../images/glass/right.png") top right repeat-y;
+}
+	.incoming .bubble .lr div {
+		background: url("../../images/glass/middle.png") top left repeat;
+	}
+/* @end */
+
+
+/* @group bottom */
+.incoming .bubble .b {
+	background: 
+		url("../../images/glass/bottomleft.png") bottom left no-repeat,
+		url("../../images/glass/bottomright-arrow.png") bottom right no-repeat;
+}
+	.incoming .bubble .b div {
+		background: 
+			url("../../images/glass/bottom.png") bottom left repeat-x;
+	}
+/* @end */
+
+
+/* @group reflection */
+.incoming .bubble .r {
+	background: 
+		url("../../images/glass/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/glass/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+	.incoming .bubble .r div {
+		background: 
+			url("../../images/glass/ref-bottom.png") bottom left repeat-x;
+	}
+/* @end */

@@ -1,0 +1,80 @@
+
+/* @group outgoing */
+
+.outgoing {
+	float: right;
+	margin: 6px 0px 0px 38px;
+}
+.outgoing .sender {
+	right: 0px;
+}
+.outgoing .icon {
+	
+}
+.outgoing .name {
+	right: 0px;
+}
+.outgoing .service {
+	right: 0px;
+}
+.outgoing .bubble {
+	margin-right: 35px;
+}
+.outgoing .bubble .compact .time {
+	left: -58px !important;
+	text-align: right !important;
+}
+.outgoing .bubble .b {
+	background:
+		url("../../images/modern/bottomleft.png") bottom left no-repeat,
+		url("../../images/modern/bottomright-arrow.png") bottom right no-repeat;
+}
+.outgoing .bubble .r {
+	background:
+		url("../../images/modern/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/modern/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+
+/* @end */
+
+
+
+/* @group incoming */
+
+.incoming {
+	float: left;
+	margin: 6px 38px 0px 0px;
+}
+.incoming .sender {
+	left: 0px;
+}
+.incoming .icon {
+	
+}
+.incoming .name {
+	left: 0px;
+}
+.incoming .service {
+	left: 0px;
+}
+.incoming .bubble {
+	margin-left: 35px;
+}
+.incoming .bubble .compact .time {
+	right: -58px !important;
+	text-align: left !important;
+}
+.incoming .bubble .b {
+	background:
+		url("../../images/modern/bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/modern/bottomright.png") bottom right no-repeat;
+}
+.incoming .bubble .r {
+	background:
+		url("../../images/modern/ref-bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/modern/ref-bottomright.png") bottom right no-repeat;
+}
+
+/* @end */
+
+

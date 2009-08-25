@@ -1,0 +1,101 @@
+/* import header for the white variants */
+@import url("../_headers/hud.css");
+
+/* include the global header override style sheet */
+@import url("../_headers/_global_override.css");
+
+
+/* @group misc */
+/*body {
+	background-color: #000;
+	background-image: none;
+}*/
+.bubble .compact .cbody {
+	border-top: 1px solid #2d2d2d;
+}
+.bubble {
+	color: #ccc;
+}
+.bubble .body a, .bubble .cbody a {
+	color: #3030be;
+}
+/* @end */
+
+
+/* @group top */
+.bubble .t {
+	background: 
+		url("../../images/hud/topleft.png") top left no-repeat,
+		url("../../images/hud/topright.png") top right no-repeat;
+}
+	.bubble .t div {
+		background: 
+			url("../../images/hud/top.png") top left repeat-x;
+	}
+/* @end */
+
+
+/* @group left-right */
+.bubble .lr {
+	background: 
+		url("../../images/hud/left.png") top left repeat-y,
+		url("../../images/hud/right.png") top right repeat-y;
+}
+	.bubble .lr div {
+		background: url("../../images/hud/middle.png") top left repeat;
+	}
+/* @end */
+
+
+/* @group bottom */
+.bubble .b {
+	background: 
+		url("../../images/hud/bottomleft.png") bottom left no-repeat,
+		url("../../images/hud/bottomright.png") bottom right no-repeat;
+}
+	.bubble .b div {
+		background: 
+			url("../../images/hud/bottom.png") bottom left repeat-x;
+	}
+/* @end */
+
+
+/* @group reflection */
+.bubble .r {
+	background: 
+		url("../../images/hud/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/hud/ref-bottomright.png") bottom right no-repeat;
+}
+	.bubble .r div {
+		background: 
+			url("../../images/hud/ref-bottom.png") bottom left repeat-x;
+	}
+/* @end */
+	
+
+/* @group incoming */
+.incoming .bubble .b {
+	background:
+		url("../../images/hud/bottomleft.png") bottom left no-repeat,
+		url("../../images/hud/bottomright-arrow.png") bottom right no-repeat;
+}
+.incoming .bubble .r {
+	background:
+		url("../../images/hud/ref-bottomleft.png") bottom left no-repeat,
+		url("../../images/hud/ref-bottomright-arrow.png") bottom right no-repeat;
+}
+/* @end */
+
+
+/* @group outgoing */
+.outgoing .bubble .b {
+	background:
+		url("../../images/hud/bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/hud/bottomright.png") bottom right no-repeat;
+}
+.outgoing .bubble .r {
+	background:
+		url("../../images/hud/ref-bottomleft-arrow.png") bottom left no-repeat,
+		url("../../images/hud/ref-bottomright.png") bottom right no-repeat;
+}
+/* @end */

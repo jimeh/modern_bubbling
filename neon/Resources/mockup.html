@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>(Modern)</title>
+	<link rel="stylesheet" href="Variants/Glass (Green & Lime).css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<script src="javascripts/reflection.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		function alignChat(shouldScroll) {
+			var windowHeight = window.innerHeight;
+			
+			if (windowHeight > 0) {
+				var contentElement = document.getElementById('Chat');
+				var contentHeight = contentElement.offsetHeight;
+
+				if (windowHeight - contentHeight > 0) {
+					contentElement.style.position = 'relative';
+					contentElement.style.top = (windowHeight - contentHeight) + 'px';
+				} else {
+					contentElement.style.position = 'static';
+				}
+			}
+			
+			// if (shouldScroll) scrollToBottom();
+		}
+		
+		function windowDidResize(){
+			alignChat(true);
+		}
+		
+		window.onresize = windowDidResize;
+	</script>
+	
+</head>
+
+<body>
+
+<div id="show_header">yes</div>
+
+<div id="Chat">
+	
+<span class="message incoming history">
+	<div class="sender">
+		<div class="icon"><img src="Incoming/buddy_icon.png" alt="" width="32" height="32" onload="Reflection.add(this,{opacity:0.2});" /></div>
+		<div class="name">Dave</div>
+		<div class="service">MSN</div>
+	</div>
+	<div class="bubble">
+		<div class="t"><div></div></div>
+		<div class="lr"><div></div></div>
+		<div class="b"><div></div></div>
+		<div class="r"><div></div></div>
+		<div class="time">12:59:23</div>
+		<div class="body">BOOOO</div>
+	</div>
+</span>	
+<br clear="all">
+
+<span class="message incoming history">
+	<div class="sender">
+		<div class="icon"><img src="Incoming/buddy_icon.png" alt="" width="32" height="32" onload="Reflection.add(this,{opacity:0.2});" /></div>
+		<div class="name">Dave</div>
+		<div class="service">MSN</div>
+	</div>
+	<div class="bubble">
+		<div class="t"><div></div></div>
+		<div class="lr"><div></div></div>
+		<div class="b"><div></div></div>
+		<div class="r"><div></div></div>
+		<div class="time">12:59:28</div>
+		<div class="body">Hey, how are you? alright and all :)</div>
+	</div>
+</span>	
+<br clear="all">
+
+<div class="status">
+	<div class="smessage">Dave went away</div>
+	<div class="stime">13:00:32</div>
+</div>
+<div class="status">
+	<div class="smessage">Dave came back</div>
+	<div class="stime">13:00:32</div>
+</div>
+
+<span class="message outgoing">
+	<div class="sender">
+		<div class="icon"><img src="images/jimeh.png" alt="" width="32" height="32" onload="Reflection.add(this,{opacity:0.2});" /></div>
+		<div class="name">Jim</div>
+		<div class="service">MSN</div>
+	</div>
+	<div class="bubble">
+		<div class="t"><div></div></div>
+		<div class="lr"><div></div></div>
+		<div class="b"><div></div></div>
+		<div class="r"><div></div></div>
+		<div class="time">13:00:46</div>
+		<div class="body">same ol' samd ol', what can i say?</div>
+	</div>
+</span>	
+<br clear="all">
+
+<span class="message outgoing">
+	<div class="sender">
+		<div class="icon"><img src="images/jimeh.png" alt="" width="32" height="32" onload="Reflection.add(this,{opacity:0.2});" /></div>
+		<div class="name">Jim</div>
+		<div class="service">MSN</div>
+	</div>
+	<div class="bubble">
+		<div class="t"><div></div></div>
+		<div class="lr"><div></div></div>
+		<div class="b"><div></div></div>
+		<div class="r"><div></div></div>
+		<div class="time">13:01:03</div>
+		<div class="body">...life's a bitch... lol ;) <a href="#">http://www.domain.com/</a></div>
+	</div>
+</span>	
+<br clear="all">
+
+<span class="message incoming">
+	<div class="sender">
+		<div class="icon"><img src="Incoming/buddy_icon.png" alt="" width="32" height="32" onload="Reflection.add(this,{opacity:0.2});" /></div>
+		<div class="name">Dave</div>
+		<div class="service">MSN</div>
+	</div>
+	<div class="bubble">
+		<div class="t"><div></div></div>
+		<div class="lr"><div></div></div>
+		<div class="b"><div></div></div>
+		<div class="r"><div></div></div>
+		<div class="time">13:04:42</div>
+		<div class="body">i know what you mean... test text blah bleee bee pooo test text blah bleee bee pooo test text blah bleee bee pooo test text blah bleee bee pooo test text blah bleee bee pooo ;)</div>
+	</div>
+</span>	
+<br clear="all">
+
+
+</div>
+
+
+
+<div id="header">
+	<div class="toggle"></div>
+	<div class="bar">
+		<div class="left">%chatName%</div>
+		<div class="right">%timeOpened{%H:%M}%</div>
+	</div>
+</div>
+
+<script src="javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+<!-- <script type="text/javascript" charset="utf-8">
+
+	var fadeTime = 300;
+	var showDetails = false;
+	var headerVisible = false;
+
+	$(document).ready(function(){
+		
+		// show header on init if header is enabled
+		if ($('#show_header').text() == 'yes') {
+			$('#header .bar').animate({marginTop: '-'+$('#header .bar').height()+'px', opacity: 0}, 0);
+			$('#header .bar').animate({marginTop: '0px', opacity: 1}, 500);
+			$('#header .toggle').addClass('hide');
+			headerVisible = true;
+		};
+		
+		// toggle header
+		$('#header .toggle').click(function(){
+			if (headerVisible) {
+				$('#header .bar').animate({marginTop: '-'+$('#header .bar').height()+'px', opacity: 0}, 500);
+				$('#header .toggle').removeClass('hide');
+				headerVisible = false;
+			} else {
+				$('#header .bar').animate({marginTop: '0px', opacity: 1}, 500);
+				$('#header .toggle').addClass('hide');
+				headerVisible = true;
+			};
+		});
+		
+		// toggle details when ctrl+d is pressed
+		$(window).keydown(function(e){
+			if (e.ctrlKey == true && e.keyCode == 68) {
+				if (!showDetails) {
+					$('.message .sender .name').addClass('force-visible');
+					$('.message .sender .service').addClass('force-visible');
+					$('.message .bubble .time').addClass('force-visible');
+					showDetails = true;
+				} else {
+					$('.message .sender .name').removeClass('force-visible');
+					$('.message .sender .service').removeClass('force-visible');
+					$('.message .bubble .time').removeClass('force-visible');
+					showDetails = false;
+				};
+			};
+		});
+		
+		// fade in/out history bubbles when hovered
+		$('.history').hover(function(){
+			$(this).fadeTo(fadeTime, 1);
+		},function(){
+			$(this).fadeTo(fadeTime, 0.5);
+		});
+		
+		// fade in/out details text when hovering over bubble
+		// $('.message').hover(function(){
+		// 	if (!showDetails) {
+		// 		$(this).children('.sender').children('.name').fadeIn(fadeTime);
+		// 		$(this).children('.sender').children('.service').fadeIn(fadeTime);
+		// 		$(this).children('.bubble').children('.time').fadeIn(fadeTime);
+		// 		$(this).children('.bubble').children('.compact').children('.cbody').children('.time').fadeIn(fadeTime);
+		// 	};
+		// },function(){
+		// 	if (!showDetails) {
+		// 		$(this).children('.sender').children('.name').fadeOut(fadeTime);
+		// 		$(this).children('.sender').children('.service').fadeOut(fadeTime);
+		// 		$(this).children('.bubble').children('.time').fadeOut(fadeTime);
+		// 		$(this).children('.bubble').children('.compact').children('.cbody').children('.time').fadeOut(fadeTime);
+		// 	};
+		// });
+		
+	});
+</script> -->
+
+</body>
+</html>

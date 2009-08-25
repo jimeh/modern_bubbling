@@ -1,0 +1,153 @@
+/*
+   
+   Modern Bubbling - Neon v1.0 beta 7
+   an Adium Message Style
+   
+   Created by Jim Myhrberg (contact@jimeh.info).
+   http://blog.zydev.info/category/modern-bubbling/
+
+   Available for download and/or updates at:
+   http://www.adiumxtras.com/index.php?a=xtras&xtra_id=3629
+
+*/
+
+
+/* import default header styling */
+@import url("styles/_headers/_default.css");
+
+/* import message bubble styling */
+@import url("styles/_bubbles/message-bubble.css");
+
+/* uncomment line bellow to disable all bubble reflections */
+/*@import url("styles/_bubbles/disable-reflection.css");*/
+
+
+body {
+	/* font property used for development only */ 
+	font: 11px helvetica;
+	background: #171717 url("images/bg.png") bottom repeat-x;
+	color: #191919;
+	margin: 8px 10px 8px 10px;
+}
+
+#Chat {
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+.emoticon {
+	border-style: none;
+	position: relative;
+	margin: -3px 0px -5px 0px;
+}
+
+/* @group history */
+
+.history {
+	opacity: 0.5;
+}
+
+/* @end */
+
+/* @group status */
+
+.status {
+	color: #fff;
+	font-family: helvetica, sans-serif;
+	font-size: 10px;
+	margin: 4px 0px 0px 0px;
+	text-align: center;
+	cursor: default;
+	text-shadow: #fff 0 0 5px;
+	opacity: 0.3;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+.status:hover {
+	opacity: 0.5;
+}
+.status .stime {
+	font-size: 9px;
+}
+
+/* @end */
+
+/* @group message */
+
+.message {
+	position: relative;
+}
+
+.message .sender {
+	position: absolute;
+	bottom: 11px;
+	width: 32px;
+	height: 32px;
+}
+.message .icon {
+	
+}
+.message .name {
+	font-family: helvetica, sans-serif;
+	font-size: 9px;
+	position: absolute;
+	bottom: -13px;
+	min-width: 32px;
+	text-align: center;
+	opacity: 0;
+	white-space: nowrap;
+	color: #c7c7c7;
+	text-shadow: rgba(255,255,255,0.75) 0 0 5px;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+.message .service {
+	font-family: helvetica, sans-serif;
+	font-size: 9px;
+	position: absolute;
+	bottom: 33px;
+	min-width: 32px;
+	text-align: center;
+	opacity: 0;
+	white-space: nowrap;
+	color: #c7c7c7;
+	text-shadow: rgba(255,255,255,0.75) 0 0 5px;
+	-webkit-transition: opacity 0.3s ease-in-out;
+}
+
+/* @end */
+
+/* @group display info */
+
+/*
+   show info on mouse hover behavior
+    - shows name, service and timestamp when any
+      part of the message is hovered.
+*/
+
+.message:hover .sender .name,
+.message:hover .sender .service,
+.message:hover .bubble .time,
+.message:hover .bubble .compact .cbody .ctime,
+.message:hover .bubble .compact .cnbody .ctime {
+	opacity: 1;
+}
+
+.force-visible {
+	opacity: 1 !important;
+}
+
+/*
+   pre-1.0 show info on mouse hover behavior
+    - shows name and service when user icon is
+      hovered, and timestamp when message bubble
+      is hovered.
+*/
+
+/*
+.message .sender:hover .name {
+	visibility: visible;
+}
+*/
+
+/* @end */
+
+
+
