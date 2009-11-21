@@ -3,6 +3,7 @@
 .message {
 	position: relative;
 	min-height: 42px;
+	z-index: 0;
 }
 .message .body {
 	padding: 9px 20px 22px 20px;

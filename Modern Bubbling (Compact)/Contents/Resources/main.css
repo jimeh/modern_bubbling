@@ -1,11 +1,10 @@
 
 /*
    
-   Modern Bubbling v1.0 beta 4
+   Modern Bubbling v1.0 beta 7
    an Adium Message Style
    
-   Created by Jim Myhrberg (jim@zydev.info).
-   http://blog.zydev.info/category/modern-bubbling/
+   Created by Jim Myhrberg (contact@jimeh.me).
 
    Available for download and/or updates at:
    http://www.adiumxtras.com/index.php?a=xtras&xtra_id=3629
@@ -23,18 +22,22 @@
 /*@import url("styles/_bubbles/disable-reflection.css");*/
 
 
-BODY {
+body {
 /* font property used for development only */
 /*	font: 11px helvetica;*/
-	background: #fff url("images/bg.jpg") bottom repeat-x;
+	background: #fff;
 	color: #303030;
-	margin: 8px 10px 8px 10px;
+	margin: 0;
+	z-index: -3
 }
 
 #Chat {
+	background: transparent url(images/bg.jpg) repeat-x left bottom;
+	padding: 5px 10px 12px 10px;
 	overflow: hidden;
-	padding-bottom: 15px;
+	z-index: -2;
 }
+
 .emoticon {
 	border-style: none;
 	position: relative;
@@ -107,7 +110,6 @@ BODY {
 	visibility: visible;
 }
 */
-
 
 
 
