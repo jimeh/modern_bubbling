@@ -21,9 +21,9 @@ def release
   styles = Dir.glob("#{$BUILD_DIR}/*/").map { |dir| dir.chop }
   commit = get_commit_hash
   filename = $BUILD_DIR + "/" + $ARCHIVE_FILENAME.gsub("{commit}", commit) + ".tgz"
-  cmd = "tar -czf \"#{filename}\""
+  cmd = "tar -C \"#{$BUILD_DIR}\" -czf \"#{filename}\""
   styles.each do |style|
-    cmd << " \"#{style}\""
+    cmd << " \"#{style.split("/").last}\""
   end
   `#{cmd}`
   puts "Archived commit #{commit} to #{filename} with:"
