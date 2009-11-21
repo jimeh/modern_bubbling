@@ -26,14 +26,13 @@
 body {
 /* font property used for development only */
 /*	font: 11px helvetica;*/
-	background: #fff;
+	background: #fff url(images/bg.jpg) repeat-x left bottom;
 	color: #303030;
 	margin: 0;
 	z-index: -3;
 }
 
 #Chat {
-	background: transparent url(images/bg.jpg) repeat-x left bottom;
 	padding: 5px 10px 12px 10px;
 	overflow: hidden;
 	z-index: -2;

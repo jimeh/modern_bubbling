@@ -296,6 +296,7 @@
 				if (windowHeight - contentHeight > 0) {
 					contentElement.style.position = 'relative';
 					contentElement.style.top = (windowHeight - contentHeight) + 'px';
+					document.body.style.height = windowHeight + "px"; /* Safari 4 background fix */
 				} else {
 					contentElement.style.position = 'static';
 				}
