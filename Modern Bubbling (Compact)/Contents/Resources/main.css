@@ -26,16 +26,14 @@
 body {
 /* font property used for development only */
 /*	font: 11px helvetica;*/
-	background: #fff url(images/bg.jpg) repeat-x left bottom;
+	background: #fff url("images/bg.jpg") repeat-x left bottom;
 	color: #303030;
 	margin: 0;
-	z-index: -3;
 }
 
 #Chat {
 	padding: 5px 10px 12px 10px;
 	overflow: hidden;
-	z-index: -2;
 }
 
 .emoticon {
@@ -47,7 +45,7 @@ body {
 
 .history {
 	opacity: 0.4;
-	-webkit-transition: opacity 1s linear;
+	-webkit-transition: opacity 0.5s linear;
 }
 
 .history:hover {
